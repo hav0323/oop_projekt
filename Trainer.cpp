@@ -41,7 +41,6 @@ void Trainer::Tostring()
     }
 }
 
-// Getters
 string Trainer::GetName() 
 {
     return this->name;

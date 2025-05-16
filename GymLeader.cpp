@@ -59,3 +59,12 @@ void GymLeader::Tostring()
 Type *GymLeader::GetSpecialty() {
     return this->specialty;
 }
+
+GymLeader::~GymLeader()
+{
+    for (Pokemon *pokemon : this->team)
+    {
+        delete pokemon;
+    }
+    delete this->specialty;
+}
