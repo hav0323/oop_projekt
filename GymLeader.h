@@ -10,6 +10,7 @@ private:
 public:
     GymLeader(string name, int age, string gender, Type *specialty);
     GymLeader(string name, int age, string gender, Type *specialty, vector<Pokemon *> team);
+    ~GymLeader();
 
     void AddPokemon(Pokemon *pokemon);
     void Tostring();
